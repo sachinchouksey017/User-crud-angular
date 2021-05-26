@@ -1,0 +1,21 @@
+<mat-toolbar class="toolbar" fxLayout='row' fxLayoutAlign='center center'>
+    <div class="toolbar-inside"  fxLayout='row' fxLayoutAlign='space-between center'>
+        <div fxLayout='row' fxLayoutAlign='space-between center'>
+            <button mat-icon-button>
+                <mat-icon class="icon">segment</mat-icon>
+            </button>
+            <h1 class="example-app-name head">Users</h1>
+        </div>
+        <div fxLayout fxLayoutAlign='center center'>
+            <button [matMenuTriggerFor]="menu" class="profile" mat-fab color="primary"
+                aria-label="Example icon button with a delete icon">
+            </button>
+            <div fxHide.xs fxFlexOffset=10px class="head name">
+                John Doe
+            </div>
+        </div>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>logout</button>
+        </mat-menu>
+    </div>
+</mat-toolbar>

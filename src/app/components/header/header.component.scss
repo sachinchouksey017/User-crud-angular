@@ -1,0 +1,33 @@
+.profile {
+    background-image: url("../../../assets/img/profile.png");
+    background-size: contain;
+    box-shadow: none;
+    width: 48px;
+    height: 48px;
+}
+.head {
+    color: gray;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
+.icon {
+    color: gray;
+}
+.toolbar {
+    box-shadow: 0 1px 20px 0 rgb(46 61 73 / 20%);
+    background-color: white;
+    .toolbar-inside {
+        max-width: 100%;
+        width: 100%;
+    }
+    .name {
+        font-weight: 300;
+    }
+}
+@media only screen and (min-width: 1800px) {
+    .toolbar {
+        .toolbar-inside {
+            max-width: 80%;
+        }
+    }
+}

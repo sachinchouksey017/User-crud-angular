@@ -1,0 +1,21 @@
+<div class="progress-card" fxFlex.sm=50 fxFlex.xs=90>
+    <div class="head">
+        PROGRESS
+    </div>
+    <mat-divider></mat-divider>
+    <div class="progress">
+        <mat-progress-bar class="example-margin" mode="determinate" [value]="(countData.male + countData.female)*10">
+        </mat-progress-bar>
+    </div>
+    <div class="male-count count-row" fxLayout>
+        <div class="text">Male Users:</div>
+        <div class="count" fxFlexOffset=42px>{{countData.male}}</div>
+
+
+    </div>
+    <div fxLayout class="count-row">
+        <div class="text">Female Users:</div>
+        <div class="count" fxFlexOffset=20px>{{countData.female}}</div>
+    </div>
+
+</div>

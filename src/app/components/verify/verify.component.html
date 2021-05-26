@@ -1,0 +1,15 @@
+<div class="first-row" fxLayout fxLayoutAlign='space-between center'>
+    <div class="text">
+        Delete User
+    </div>
+    <button (click)='close(false)' mat-icon-button>
+        <mat-icon class="icon">close</mat-icon>
+    </button>
+</div>
+<mat-divider></mat-divider>
+<div class="dialog-content">Are you sure you want to delete {{data.name}} ?</div>
+<div class="action" fxLayout fxLayoutAlign='end center'>
+    <div class="button-click button-click-no" (click)="close(false)"> No</div>
+
+    <div fxFlexOffset=16px class="button-click" (click)="close(true)"> Yes</div>
+</div>

@@ -1,0 +1,62 @@
+<div class="login" fxLayout fxLayoutAlign='center center'>
+    <mat-card class="card">
+        <div class="first-row" fxLayout fxLayoutAlign='space-between center'>
+            <div class="text">
+                {{selectedType =='add'? 'Add':'Edit'}} User
+            </div>
+            <button (click)='close()' mat-icon-button>
+                <mat-icon class="icon">close</mat-icon>
+            </button>
+        </div>
+
+        <div [formGroup]="registerForm" fxLayout='row wrap'>
+            <mat-form-field fxFlex=100 appearance="outline">
+                <mat-label>Name</mat-label>
+                <input formControlName='name' autocomplete="off" matInput placeholder="name">
+                <mat-error fxFlex *ngIf="!registerForm.controls['name'].valid && registerForm.controls['name'].touched">
+                    {{ getErrorMessage(registerForm.controls['name'], 'Name') }} </mat-error>
+            </mat-form-field>
+            <!-- <mat-form-field fxFlex=100 appearance="outline">
+          <mat-label>lastName</mat-label>
+          <input formControlName='lastName' matInput placeholder="Placeholder">
+          <mat-error fxFlex *ngIf="!registerForm.controls['lastName'].valid && registerForm.controls['lastName'].touched">
+            {{ getErrorMessage(registerForm.controls['lastName'], 'lastName') }} </mat-error>
+        </mat-form-field> -->
+            <div class="radio">
+                <mat-label>Gender</mat-label>
+                <mat-radio-group fxFlexOffset='20px' formControlName="gender" aria-label="Select an option">
+                    <mat-radio-button value="male">Male</mat-radio-button>
+                    <mat-radio-button fxFlexOffset='20px' value="female">Female</mat-radio-button>
+                </mat-radio-group>
+            </div>
+
+            <mat-form-field fxFlex=100 appearance="outline">
+                <mat-label>email</mat-label>
+                <input formControlName='email' autocomplete="off" matInput placeholder="Placeholder">
+                <mat-error fxFlex
+                    *ngIf="!registerForm.controls['email'].valid && registerForm.controls['email'].touched">
+                    {{ getErrorMessage(registerForm.controls['email'], 'email') }} </mat-error>
+            </mat-form-field>
+
+            <mat-form-field fxFlex=100 appearance="outline">
+                <mat-label>Date Of Birth</mat-label>
+                <input formControlName='dob' readonly='true' (click)="picker.open()" autocomplete="off" [matDatepicker]="picker" matInput placeholder="Placeholder">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+                <mat-error fxFlex *ngIf="!registerForm.controls['dob'].valid && registerForm.controls['dob'].touched">
+                    {{ getErrorMessage(registerForm.controls['dob'], 'DOB') }} </mat-error>
+            </mat-form-field>
+            <mat-form-field fxFlex=100 appearance="outline">
+                <mat-label>Address</mat-label>
+                <textarea formControlName='address' autocomplete="off" placeholder="Placeholder" matInput></textarea>
+                <mat-error fxFlex
+                    *ngIf="!registerForm.controls['address'].valid && registerForm.controls['address'].touched">
+                    {{ getErrorMessage(registerForm.controls['address'], 'Address') }} </mat-error>
+            </mat-form-field>
+        </div>
+        <div fxLayout fxLayoutAlign='end center'>
+            <div class="button-click" (click)="register()"> Submit</div>
+        </div>
+    </mat-card>
+
+</div>

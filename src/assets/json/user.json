@@ -1,0 +1,88 @@
+{
+    "user": [
+        {
+            "_id": "5f8b0e4585da9355690ad866",
+            "name": "honey",
+            "email": "honey@gmail.com",
+            "password": "123456",
+            "gender": "male",
+            "address": "Mumbai",
+            "profileUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA6eicE4jNjMgF1lREUukyVT3BW0nnMyf81dznts1JZzyKjlMXEfxO8yTrdFBrK62J7AY&usqp=CAU",
+            "mobileNumber": "8878257808",
+            "dob": "05/04/1990",
+            "__v": 0
+        },
+        {
+            "_id": "5f8b0e6185da9355690ad867",
+            "name": "guru",
+            "email": "guru@gmail.com",
+            "gender": "male",
+            "password": "123456",
+            "address": "Mumbai",
+            "profileUrl": "http://localhost:3000/image-1602948715537.jpg",
+            "mobileNumber": "88782222222",
+            "dob": "05/04/1990",
+            "__v": 0
+        },
+        {
+            "_id": "5f8b0e4585da9355690ad866",
+            "name": "honey",
+            "email": "honey@gmail.com",
+            "gender": "male",
+            "password": "123456",
+            "address": "Mumbai",
+            "profileUrl": "http://localhost:3000/image-1602948676008.jpg",
+            "mobileNumber": "8878257808",
+            "dob": "05/04/1990",
+            "__v": 0
+        },
+        {
+            "_id": "5f8b0e6185da9355690ad867",
+            "name": "guru",
+            "email": "guru@gmail.com",
+            "gender": "male",
+            "address": "Mumbai",
+            "password": "123456",
+            "profileUrl": "http://localhost:3000/image-1602948715537.jpg",
+            "mobileNumber": "88782222222",
+            "dob": "05/04/1990",
+            "__v": 0
+        },
+        {
+            "_id": "5f8b0e6185da9355690ad867",
+            "name": "honey",
+            "email": "honey@gmail.com",
+            "gender": "male",
+            "address": "Mumbai",
+            "password": "123456",
+            "profileUrl": "http://localhost:3000/image-1602948715537.jpg",
+            "mobileNumber": "88782222222",
+            "dob": "05/04/1990",
+            "__v": 0
+        },
+        {
+            "_id": "5f8b0e6185da9355690ad867",
+            "name": "neha",
+            "email": "neha@gmail.com",
+            "gender": "female",
+            "address": "Mumbai",
+            "password": "123456",
+            "profileUrl": "http://localhost:3000/image-1602948715537.jpg",
+            "mobileNumber": "88782222222",
+            "dob": "05/04/1996",
+            "__v": 0
+        },
+        {
+            "_id": "5f8b0e6185da9355690ad867",
+            "name": "mohini",
+            "email": "mohini@gmail.com",
+            "gender": "female",
+            "address": "Mumbai",
+            "password": "123456",
+            "profileUrl": "http://localhost:3000/image-1602948715537.jpg",
+            "mobileNumber": "88782222222",
+            "dob": "05/04/1990",
+            "__v": 0
+        }
+    ]
+}

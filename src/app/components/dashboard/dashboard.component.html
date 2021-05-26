@@ -1,0 +1,10 @@
+<div class="dashboard">
+    <app-header></app-header>
+    <div class="content" fxLayout='row wrap' fxLayoutAlign='center start' fxLayoutAlign.sm='none none'
+        fxLayout.sm='column-reverse'>
+        <app-user-list [noProductCheck]=noProductCheck fxFlex.sm=100 fxFlex.xs=100 (messageEvent)="update($event)"
+            [userArray]=userArray fxFlex>
+        </app-user-list>
+        <app-progress-card [countData]=countData class="progress-selctor" fxFlexOffset=10px></app-progress-card>
+    </div>
+</div>
